@@ -166,13 +166,17 @@ export default function Home() {
                 direction="left"
                 items={[
                   {
-                    logo: "/logo/logo.svg",
+                    logo: "/logo/lora.png",
                     name: "Logo",
                   },
                   {
-                    logo: "/logo/logo.svg",
+                    logo: "/logo/schedio.png",
                     name: "Logo",
                   },
+                  {
+                    logo: "/logo/mm.png",
+                    name: "Logo",
+                  }
                 ]}
               />
             </section>
