@@ -2,6 +2,7 @@
 
 import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
 import { CoverDemo } from "@/components/demos/cover-demo";
+import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import BoxReveal from "@/components/magicui/box-reveal";
 import NumberTicker from "@/components/magicui/number-ticker";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
@@ -9,6 +10,47 @@ import Image from "next/image";
 import Link from "next/link";
 import { PiCheckBold } from "react-icons/pi";
 import { Link as ScrollLink, Element } from "react-scroll";
+
+
+const services = [
+  {
+    icon: "/images/s_6.png",
+    title: "Web Design + Development",
+    description:
+      "Take your business to the next level with our web design and development services",
+  },
+  {
+    icon: "/images/s_1.png",
+    title: "Search Engine Optimization",
+    description:
+      "Get your website to the top of search engine results with our SEO services",
+  },
+  {
+    icon: "/images/s_5.png",
+    title: "Content Creation",
+    description:
+      "Boost your brand's online presence with our social media marketing services",
+  },
+  {
+    icon: "/images/s_3.png",
+    title: "Social Media Marketing",
+    description:
+      "Interact with your customers and increase sales with our email marketing services",
+  },
+  {
+    icon: "/images/s_4.png",
+    title: "Email Marketing",
+    description:
+      "With our content creation services, we help businesses drive results",
+  },
+  {
+    icon: "/images/s_2.png",
+    title: "Pay-Per-Click Advertising",
+    description:
+      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+  },
+];
+
 
 export default function Home() {
   return (
@@ -176,7 +218,7 @@ export default function Home() {
                   {
                     logo: "/logo/mm.png",
                     name: "Logo",
-                  }
+                  },
                 ]}
               />
             </section>
@@ -184,10 +226,40 @@ export default function Home() {
         </div>
       </main>
 
-
       <Element name="services">
-        {/* TODO: Add Services */}
+        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+          <h1>
+            <WordPullUpDemo />
+          </h1>
 
+          <p className="text-center py-4 md:w-3/4 mx-auto text-xl md:text-2xl text-gray-500">
+            All of our services are designed to help you achieve your goals and
+            grow your business. 
+            {/* We offer a wide range of services to suit your
+            needs, from branding and marketing to web development and digital
+            marketing. */}
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
+              >
+                <Image
+                  src={service.icon}
+                  width={10000}
+                  height={10000}
+                  className="object-contain bg-gray-100 p-4 w-full h-40 rounded-md"
+                  alt="image"
+                />
+                <h1 className="text-xl font-medium">{service.title}</h1>
+                <p className="text-gray-500">{service.description}</p>
+              </div>
+            ))}
+          </div>
+
+        </div>
       </Element>
     </div>
   );
