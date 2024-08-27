@@ -1,7 +1,10 @@
 "use client";
 
+import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
 import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
+import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { CoverDemo } from "@/components/demos/cover-demo";
+import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
 import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import BoxReveal from "@/components/magicui/box-reveal";
 import NumberTicker from "@/components/magicui/number-ticker";
@@ -10,7 +13,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { PiCheckBold } from "react-icons/pi";
 import { Link as ScrollLink, Element } from "react-scroll";
-
 
 const services = [
   {
@@ -50,7 +52,6 @@ const services = [
       "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
   },
 ];
-
 
 export default function Home() {
   return (
@@ -234,7 +235,7 @@ export default function Home() {
 
           <p className="text-center py-4 md:w-3/4 mx-auto text-xl md:text-2xl text-gray-500">
             All of our services are designed to help you achieve your goals and
-            grow your business. 
+            grow your business.
             {/* We offer a wide range of services to suit your
             needs, from branding and marketing to web development and digital
             marketing. */}
@@ -258,8 +259,52 @@ export default function Home() {
               </div>
             ))}
           </div>
-
         </div>
+      </Element>
+
+      <section className="py-20">
+        <ScrollBasedVelocityDemo />
+      </section>
+
+      <Element name="process">
+        <main className="md:px-0 mx-6 md:mx-auto">
+          <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
+            Our{" "}
+            <span className="text-blue-500 flex gap-x-1 items-center">
+              {" "}
+              <Image
+                src={"/icons/squiggle.svg"}
+                width={10000}
+                height={10000}
+                className="w-6"
+                alt="image"
+              />
+              Creative
+              <Image
+                src={"/icons/star.svg"}
+                width={10000}
+                height={10000}
+                className="w-6 mb-8"
+                alt="image"
+              />
+            </span>{" "}
+            Process
+          </h1>
+
+          <p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+            All of our services are designed to help your business to get
+            noticed.
+          </p>
+
+          <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 mx-auto">
+            <div className="w-full md:w-1/2 order-2 md:order-1">
+              <AnimatedBeamMultipleOutputDemo />
+            </div>
+            <div className="w-full md:w-1/2 order-1 md:order-2 md:ml-0">
+              <BoxRevealDemo />
+            </div>
+          </div>
+        </main>
       </Element>
     </div>
   );
