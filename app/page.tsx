@@ -9,6 +9,7 @@ import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import BoxReveal from "@/components/magicui/box-reveal";
 import NumberTicker from "@/components/magicui/number-ticker";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
+import { IconStarFilled } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PiCheckBold } from "react-icons/pi";
@@ -306,6 +307,36 @@ export default function Home() {
           </div>
         </main>
       </Element>
+
+      <section>
+        <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
+          <Image
+            src={"/icons/ai_image.png"}
+            width={5000}
+            height={5000}
+            className=" md:w-1/4 rounded-md"
+            alt="image"
+          />
+          <div className="flex flex-col gap-y-5 md:w-1/2">
+            <h1 className="text-lg font-normal italic md:text-xl ">
+            &quot;Having partnered with MarketMinds for more than two years, we’ve found them to be exceptional collaborators. 
+            Their support has been instrumental in our business growth, and we’re thrilled with the outcomes.&quot;
+            </h1>
+            <div className="flex items-center gap-x-1">
+              <IconStarFilled className="text-4xl text-yellow-500" />
+              <IconStarFilled className="text-4xl text-yellow-500" />
+              <IconStarFilled className="text-4xl text-yellow-500" />
+              <IconStarFilled className="text-4xl text-yellow-500" />
+              <IconStarFilled className="text-4xl text-yellow-500" />
+            </div>
+
+            <span className="text-xl font-medium">
+              Yuto Kondo <br />
+              CEO, Open Cloud
+            </span>
+          </div>
+        </main>
+      </section>
     </div>
   );
 }
