@@ -5,6 +5,7 @@ import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-de
 import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { CoverDemo } from "@/components/demos/cover-demo";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
+import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/shooting-stars-demo";
 import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import BoxReveal from "@/components/magicui/box-reveal";
 import NumberTicker from "@/components/magicui/number-ticker";
@@ -237,9 +238,6 @@ export default function Home() {
           <p className="text-center py-4 md:w-3/4 mx-auto text-xl md:text-2xl text-gray-500">
             All of our services are designed to help you achieve your goals and
             grow your business.
-            {/* We offer a wide range of services to suit your
-            needs, from branding and marketing to web development and digital
-            marketing. */}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
@@ -337,6 +335,11 @@ export default function Home() {
           </div>
         </main>
       </section>
+
+      <Element name="guarentees">
+        <ShootingStarsAndStarsBackgroundDemo />
+
+      </Element>
     </div>
   );
 }
