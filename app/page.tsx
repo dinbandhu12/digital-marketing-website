@@ -10,6 +10,7 @@ import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import BoxReveal from "@/components/magicui/box-reveal";
 import NumberTicker from "@/components/magicui/number-ticker";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
+import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
 import { IconStarFilled } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -338,8 +339,37 @@ export default function Home() {
 
       <Element name="guarentees">
         <ShootingStarsAndStarsBackgroundDemo />
-
       </Element>
+
+      <section className="my-10 md:py-20 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+      <LetsMakeThingsHappenSection />
+      </section>
+
+      <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
+        <div className="flex flex-col items-center gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto justify-center text-center">
+          <h1 className="text-3xl md:text-5xl font-medium ">
+            <Image
+              src={"/logo/logo.svg"}
+              width={1000}
+              height={1000}
+              className="w-40"
+              alt="image"
+            />{" "}
+          </h1>
+          <p className="text-left  text-xl  text-gray-500">123-456-7890</p>
+          <p className="text-left  text-xl  text-gray-500">
+            admin@marketminds.ca 
+          </p>
+        </div>
+
+        <div className="flex md:justify-center text-sm gap-x-4 mt-10">
+          © 2024 MarketMinds. All Rights Reserved.
+          <Link href="/" className="text-blue-700">
+            Privacy Policy
+          </Link>
+        </div>
+      </footer>
+
     </div>
   );
 }
