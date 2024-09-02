@@ -75,8 +75,8 @@ export default function Home() {
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
           <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-            <Link href={"/showcase"} className="hover:text-[#2F2121]">
-              Showcase
+            <Link href={"/projects"} className="hover:text-[#2F2121]">
+              Projects
             </Link>
 
             <ScrollLink
