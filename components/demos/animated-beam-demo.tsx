@@ -456,5 +456,4 @@ const Icons = {
     </svg>
   ),
 
-//   TODO: ADD FIGMA AND OUT MAIN LOGO IN ANIMATION LOGO
 };

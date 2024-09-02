@@ -4,28 +4,28 @@ import Link from "next/link";
 
 const works = [
   {
-    background: "bg-gray-200",
+    background: "bg-gray-300",
     imageUrl: "/images/project-1.png",
-    title: "Rubbish Brothers",
-    link: "https://www.rubbishbrothers.com",
+    title: "LiveDocs",
+    link: "https://frontend-doc-fullstack.vercel.app/",
   },
   {
-    background: "bg-gray-200",
+    background: "bg-gray-300",
     imageUrl: "/images/project-2.png",
-    title: "Atlas Massage",
-    link: "https://www.atlasmassage.ca",
+    title: "Orzana Agency",
+    link: "https://orzana.netlify.app/",
   },
   {
-    background: "bg-gray-200",
+    background: "bg-gray-300",
     imageUrl: "/images/project-3.png",
-    title: "Canadian Security Solutions",
-    link: "https://www.canadiansecuritysolutions.com",
+    title: "DBS | Portfolio",
+    link: "https://dinbandhu.netlify.app/",
   },
   {
-    background: "bg-gray-200",
+    background: "bg-gray-300",
     imageUrl: "/images/project-4.png",
-    title: "Flight 9",
-    link: "https://www.flight9.art",
+    title: "WebCraft",
+    link: "https://webcraft-website.netlify.app/",
   },
 
 

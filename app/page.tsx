@@ -113,7 +113,7 @@ export default function Home() {
           </a> */}
 
           <Link
-            href={"/meeting"}
+            href={"/pagenotfound"}
             className="px-6 py-3 rounded-md uppercase hover:bg-gray-100 hover:text-black border border-black text-white bg-black transition duration-200 text-sm hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
           >
             Book a call
@@ -135,18 +135,18 @@ export default function Home() {
 
           <div className="flex md:justify-center items-center gap-x-4">
             <Link
-              href="/meeting"
+              href="/pagenotfound"
               className="py-3 px-10 md:px-16 md:text-xl hover:bg-[#5891eb] rounded-[6px] border border-black dark:border-white bg-[#121212] text-white transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
             >
               Book a Call
             </Link>
 
             <Link
-              href={"/showcase"}
+              href={"/projects"}
               className="
               bg-white py-3 px-10 md:px-16 md:text-xl border border-black rounded-[6px] transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
             >
-              Showcase
+              Projects
             </Link>
           </div>
 
@@ -197,7 +197,7 @@ export default function Home() {
 
                 <div className="flex-1 min-w-0">
                   <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={10} /> +
+                    <NumberTicker value={20} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Projects Completed
                     </p>
@@ -245,7 +245,7 @@ export default function Home() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
+                className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 hover:bg-gray-200 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
               >
                 <Image
                   src={service.icon}
@@ -348,25 +348,27 @@ export default function Home() {
       <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
         <div className="flex flex-col items-center gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto justify-center text-center">
           <h1 className="text-3xl md:text-5xl font-medium ">
-            <Image
-              src={"/logo/logo.svg"}
-              width={1000}
-              height={1000}
-              className="w-40"
-              alt="image"
-            />{" "}
+            <Link href="/">
+              <Image
+                src={"/logo/logo.svg"}
+                width={1000}
+                height={1000}
+                className="w-40"
+                alt="image"
+              />{" "}
+            </Link>
           </h1>
-          <p className="text-left  text-xl  text-gray-500">123-456-7890</p>
-          <p className="text-left  text-xl  text-gray-500">
-            admin@marketminds.ca 
-          </p>
+          <p className="text-center text-md text-gray-400">123-456-7890  <br /> admin@marketminds.com </p>
         </div>
 
         <div className="flex md:justify-center text-sm gap-x-4 mt-10">
           © 2024 MarketMinds. All Rights Reserved.
-          <Link href="/" className="text-blue-700">
-            Privacy Policy
-          </Link>
+          <Link href="/pagenotfound" className="text-blue-700">
+          Privacy Policy
+        </Link>
+        <Link href="/pagenotfound" className="text-blue-700">
+          Terms of Service
+        </Link>
         </div>
       </footer>
 

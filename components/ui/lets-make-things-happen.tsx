@@ -19,13 +19,13 @@ function LetsMakeThingsHappenSection() {
         </p>
 
         <Link
-          href="/meeting"
+          href="/pagenotfound"
           className="py-3 px-10 md:px-16 md:text-xl hover:bg-[#5891eb] rounded-[6px] border border-black dark:border-white bg-[#121212] text-white transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
         >
           Book a Call
         </Link>
       </div>
-      <div className="absolute -top-8 right-8 hidden md:block">
+      <div className="absolute -top-8 right-8 hidden hover:scale-110 hover:rotate-[10deg] md:block transition duration-200 ease-in-out">
         <Image
           src="/images/proposal_illustration.png"
           alt="proposal illustration"
